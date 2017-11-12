@@ -255,7 +255,6 @@ public class Calculadora extends javax.swing.JFrame {
                             .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(mult, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -330,12 +329,17 @@ public class Calculadora extends javax.swing.JFrame {
             double n = Double.parseDouble(visor.getText());
             numeros.add(n);
             visor.setText(null);
+
             Double result = 0.0;
             int ops = 0;
             for (int nums = 0; nums < numeros.size(); nums += 2) {
-                Double parcela = numeros.get(nums);
-                Double parcela2 = numeros.get(nums + 1);
 
+                Double parcela = 0.0;
+                parcela = numeros.get(nums);
+                Double parcela2 = 0.0;
+                if ((nums + 1) < numeros.size()) {
+                    parcela2 = numeros.get(nums + 1);
+                }
                 switch (operacoes.get(ops)) {
                     case "+":
                         result = result + parcela + parcela2;
