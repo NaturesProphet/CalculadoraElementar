@@ -458,19 +458,19 @@ public class Calculadora extends javax.swing.JFrame {
         switch (operacao) {
             case "+":
                 result += valor;
-                log += "+ " + valor +" = " + result + "\n";
+                log += valor +" = " + result + "\n";
                 break;
             case "-":
                 result -= valor;
-                log += "+ " + valor +" = " + result + "\n";
+                log += valor +" = " + result + "\n";
                 break;
             case "x":
                 result *= valor;
-                log += "+ " + valor +" = " + result + "\n";
+                log += valor +" = " + result + "\n";
                 break;
             case "/":
                 result /= valor;
-                log += "+ " + valor +" = " + result + "\n";
+                log += valor +" = " + result + "\n";
                 break;
             default:
                 result = valor;
