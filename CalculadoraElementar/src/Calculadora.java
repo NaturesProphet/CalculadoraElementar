@@ -13,6 +13,10 @@ public class Calculadora extends javax.swing.JFrame {
     /**
      * Creates new form Calculadora
      */
+    Double result = 0.0;
+    String operacao = "";
+    String log = "";
+
     public Calculadora() {
         initComponents();
     }
@@ -46,95 +50,197 @@ public class Calculadora extends javax.swing.JFrame {
         opsoma_B = new javax.swing.JButton();
         c_B = new javax.swing.JButton();
         visor = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        log_TA = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         num7_B.setText("7");
+        num7_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                num7_BActionPerformed(evt);
+            }
+        });
 
         num9_B.setText("9");
+        num9_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                num9_BActionPerformed(evt);
+            }
+        });
 
         num8_B.setText("8");
+        num8_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                num8_BActionPerformed(evt);
+            }
+        });
 
         opcent_B.setText("%");
 
         opdiv_B.setText("/");
+        opdiv_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opdiv_BActionPerformed(evt);
+            }
+        });
 
         num6_B.setText("6");
+        num6_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                num6_BActionPerformed(evt);
+            }
+        });
 
         num5_B.setText("5");
+        num5_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                num5_BActionPerformed(evt);
+            }
+        });
 
         opinverso_B.setText("1/x");
 
         opmult_B.setText("x");
+        opmult_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opmult_BActionPerformed(evt);
+            }
+        });
 
         num4_B.setText("4");
+        num4_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                num4_BActionPerformed(evt);
+            }
+        });
 
         num3_B.setText("3");
+        num3_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                num3_BActionPerformed(evt);
+            }
+        });
 
         num2_B.setText("2");
+        num2_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                num2_BActionPerformed(evt);
+            }
+        });
 
         opsub_B.setText("-");
+        opsub_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opsub_BActionPerformed(evt);
+            }
+        });
 
         num1_B.setText("1");
+        num1_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                num1_BActionPerformed(evt);
+            }
+        });
 
         virg_B.setText(",");
+        virg_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                virg_BActionPerformed(evt);
+            }
+        });
 
         num0_B.setText("0");
+        num0_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                num0_BActionPerformed(evt);
+            }
+        });
 
         calcula_B.setText("=");
+        calcula_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                calcula_BActionPerformed(evt);
+            }
+        });
 
         opsoma_B.setText("+");
+        opsoma_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opsoma_BActionPerformed(evt);
+            }
+        });
 
         c_B.setText("C");
+        c_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                c_BActionPerformed(evt);
+            }
+        });
+
+        visor.setEditable(false);
+        visor.setBackground(new java.awt.Color(153, 255, 255));
+        visor.setFont(new java.awt.Font("Lucida Sans", 1, 20)); // NOI18N
+        visor.setForeground(new java.awt.Color(102, 102, 102));
+
+        log_TA.setBackground(new java.awt.Color(153, 153, 153));
+        log_TA.setColumns(20);
+        log_TA.setForeground(new java.awt.Color(0, 255, 51));
+        log_TA.setRows(5);
+        jScrollPane1.setViewportView(log_TA);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(num7_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(7, 7, 7)
-                        .addComponent(num8_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(num9_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(opdiv_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(opcent_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(num4_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(7, 7, 7)
-                        .addComponent(num5_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(num6_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(opmult_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(opinverso_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(num1_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(num7_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(7, 7, 7)
-                                .addComponent(num2_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(num8_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(num3_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(num9_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(opsub_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(opdiv_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(opcent_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(c_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(num4_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(7, 7, 7)
-                                .addComponent(num0_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(num5_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(virg_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(num6_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(opsoma_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(calcula_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(visor, javax.swing.GroupLayout.PREFERRED_SIZE, 425, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(opmult_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(opinverso_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(num1_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(7, 7, 7)
+                                        .addComponent(num2_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(num3_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(opsub_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(c_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(7, 7, 7)
+                                        .addComponent(num0_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(virg_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(opsoma_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(calcula_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(visor, javax.swing.GroupLayout.PREFERRED_SIZE, 425, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jScrollPane1))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -171,11 +277,210 @@ public class Calculadora extends javax.swing.JFrame {
                             .addComponent(num0_B, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(opsoma_B, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(calcula_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void num1_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num1_BActionPerformed
+        visor.setText(visor.getText() + "1");
+    }//GEN-LAST:event_num1_BActionPerformed
+
+    private void num2_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num2_BActionPerformed
+        visor.setText(visor.getText() + "2");
+    }//GEN-LAST:event_num2_BActionPerformed
+
+    private void num3_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num3_BActionPerformed
+        visor.setText(visor.getText() + "3");
+    }//GEN-LAST:event_num3_BActionPerformed
+
+    private void num4_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num4_BActionPerformed
+        visor.setText(visor.getText() + "4");
+    }//GEN-LAST:event_num4_BActionPerformed
+
+    private void num5_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num5_BActionPerformed
+        visor.setText(visor.getText() + "5");
+    }//GEN-LAST:event_num5_BActionPerformed
+
+    private void num6_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num6_BActionPerformed
+        visor.setText(visor.getText() + "6");
+    }//GEN-LAST:event_num6_BActionPerformed
+
+    private void num7_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num7_BActionPerformed
+        visor.setText(visor.getText() + "7");
+    }//GEN-LAST:event_num7_BActionPerformed
+
+    private void num8_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num8_BActionPerformed
+        visor.setText(visor.getText() + "8");
+    }//GEN-LAST:event_num8_BActionPerformed
+
+    private void num9_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num9_BActionPerformed
+        visor.setText(visor.getText() + "9");
+    }//GEN-LAST:event_num9_BActionPerformed
+
+    private void virg_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_virg_BActionPerformed
+        visor.setText(visor.getText() + ".");
+    }//GEN-LAST:event_virg_BActionPerformed
+
+    private void num0_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num0_BActionPerformed
+        visor.setText(visor.getText() + "0");
+    }//GEN-LAST:event_num0_BActionPerformed
+
+    private void c_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_BActionPerformed
+        visor.setText(null);
+        result = 0.0;
+        operacao = "";
+
+    }//GEN-LAST:event_c_BActionPerformed
+
+    private void opsoma_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opsoma_BActionPerformed
+        double valor = Double.parseDouble(visor.getText());
+        switch (operacao) {
+            case "+":
+                result += valor;
+                log += log + valor + " ";
+                break;
+            case "-":
+                result -= valor;
+                log += log + valor + " ";
+                break;
+            case "x":
+                result *= valor;
+                log += log + valor + " ";
+                break;
+            case "/":
+                result /= valor;
+                log += log + valor + " ";
+                break;
+            default:
+                result = valor;
+                log = log + "" + valor + " ";
+                break;
+        }
+        operacao = "+";
+        log += "+ ";
+        visor.setText(null);
+    }//GEN-LAST:event_opsoma_BActionPerformed
+
+    private void opsub_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opsub_BActionPerformed
+        double valor = Double.parseDouble(visor.getText());
+        switch (operacao) {
+            case "+":
+                result += valor;
+                log += log + valor + " ";
+                break;
+            case "-":
+                result -= valor;
+                log += log + valor + " ";
+                break;
+            case "x":
+                result *= valor;
+                log += log + valor + " ";
+                break;
+            case "/":
+                result /= valor;
+                log += log + valor + " ";
+                break;
+            default:
+                result = valor;
+                log = log + "" + valor + " ";
+                break;
+        }
+        operacao = "-";
+        log += "- ";
+        visor.setText(null);
+    }//GEN-LAST:event_opsub_BActionPerformed
+
+    private void opmult_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opmult_BActionPerformed
+        double valor = Double.parseDouble(visor.getText());
+        switch (operacao) {
+            case "+":
+                result += valor;
+                log += log + valor + " ";
+                break;
+            case "-":
+                result -= valor;
+                log += log + valor + " ";
+                break;
+            case "x":
+                result *= valor;
+                log += log + valor + " ";
+                break;
+            case "/":
+                result /= valor;
+                log += log + valor + " ";
+                break;
+            default:
+                result = valor;
+                log = log + "" + valor + " ";
+                break;
+        }
+        operacao = "x";
+        log += "x ";
+        visor.setText(null);
+    }//GEN-LAST:event_opmult_BActionPerformed
+
+    private void opdiv_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opdiv_BActionPerformed
+        double valor = Double.parseDouble(visor.getText());
+        switch (operacao) {
+            case "+":
+                result += valor;
+                log += log + valor + " ";
+                break;
+            case "-":
+                result -= valor;
+                log += log + valor + " ";
+                break;
+            case "x":
+                result *= valor;
+                log += log + valor + " ";
+                break;
+            case "/":
+                result /= valor;
+                log += log + valor + " ";
+                break;
+            default:
+                result = valor;
+                log = log + valor + " ";
+                break;
+        }
+        operacao = "/";
+        log += "/ ";
+        visor.setText(null);
+    }//GEN-LAST:event_opdiv_BActionPerformed
+
+    private void calcula_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcula_BActionPerformed
+        double valor = Double.parseDouble(visor.getText());
+        System.out.println("result antes: " + result);
+        switch (operacao) {
+            case "+":
+                result += valor;
+                log += "+ " + valor +" = " + result + "\n";
+                break;
+            case "-":
+                result -= valor;
+                log += "+ " + valor +" = " + result + "\n";
+                break;
+            case "x":
+                result *= valor;
+                log += "+ " + valor +" = " + result + "\n";
+                break;
+            case "/":
+                result /= valor;
+                log += "+ " + valor +" = " + result + "\n";
+                break;
+            default:
+                result = valor;
+                break;
+        }
+        operacao = "";
+        System.out.println("result depois: " + result);
+        visor.setText(result.toString());
+        log_TA.setText(log);
+    }//GEN-LAST:event_calcula_BActionPerformed
 
     /**
      * @param args the command line arguments
@@ -215,6 +520,8 @@ public class Calculadora extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton c_B;
     private javax.swing.JButton calcula_B;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea log_TA;
     private javax.swing.JButton num0_B;
     private javax.swing.JButton num1_B;
     private javax.swing.JButton num2_B;
