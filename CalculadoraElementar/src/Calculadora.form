@@ -27,52 +27,52 @@
               <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jButton1" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="num7_B" min="-2" pref="80" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                      <Component id="jButton3" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="num8_B" min="-2" pref="80" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton2" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="num9_B" min="-2" pref="80" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton5" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="opdiv_B" min="-2" pref="80" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton4" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="opcent_B" min="-2" pref="80" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jButton10" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="num4_B" min="-2" pref="80" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                      <Component id="jButton7" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="num5_B" min="-2" pref="80" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton6" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="num6_B" min="-2" pref="80" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton9" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="opmult_B" min="-2" pref="80" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton8" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="opinverso_B" min="-2" pref="80" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jButton15" min="-2" pref="80" max="-2" attributes="0"/>
+                              <Component id="num1_B" min="-2" pref="80" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                              <Component id="jButton12" min="-2" pref="80" max="-2" attributes="0"/>
+                              <Component id="num2_B" min="-2" pref="80" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton11" min="-2" pref="80" max="-2" attributes="0"/>
+                              <Component id="num3_B" min="-2" pref="80" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton14" min="-2" pref="80" max="-2" attributes="0"/>
+                              <Component id="opsub_B" min="-2" pref="80" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jButton20" min="-2" pref="80" max="-2" attributes="0"/>
+                              <Component id="c_B" min="-2" pref="80" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                              <Component id="jButton17" min="-2" pref="80" max="-2" attributes="0"/>
+                              <Component id="num0_B" min="-2" pref="80" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton16" min="-2" pref="80" max="-2" attributes="0"/>
+                              <Component id="virg_B" min="-2" pref="80" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton19" min="-2" pref="80" max="-2" attributes="0"/>
+                              <Component id="opsoma_B" min="-2" pref="80" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton18" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="calcula_B" min="-2" pref="80" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jTextField1" alignment="0" min="-2" pref="425" max="-2" attributes="0"/>
+                  <Component id="visor" alignment="0" min="-2" pref="425" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -82,41 +82,41 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jTextField1" min="-2" pref="58" max="-2" attributes="0"/>
+              <Component id="visor" min="-2" pref="58" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton1" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                  <Component id="jButton2" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                  <Component id="jButton3" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                  <Component id="jButton5" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                  <Component id="jButton4" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="num7_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="num9_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="num8_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="opdiv_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="opcent_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton10" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                  <Component id="jButton6" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                  <Component id="jButton7" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                  <Component id="jButton9" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                  <Component id="jButton8" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="num4_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="num6_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="num5_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="opmult_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="opinverso_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jButton15" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="jButton11" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="jButton12" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="jButton14" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="num1_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="num3_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="num2_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="opsub_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jButton20" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="jButton16" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="jButton17" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="jButton19" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="c_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="virg_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="num0_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="opsoma_B" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Component id="jButton18" max="32767" attributes="0"/>
+                  <Component id="calcula_B" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -124,102 +124,102 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="num7_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="7"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="num9_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="9"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="num8_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="8"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton4">
+    <Component class="javax.swing.JButton" name="opcent_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="%"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton5">
+    <Component class="javax.swing.JButton" name="opdiv_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="/"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton6">
+    <Component class="javax.swing.JButton" name="num6_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="6"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton7">
+    <Component class="javax.swing.JButton" name="num5_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="5"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton8">
+    <Component class="javax.swing.JButton" name="opinverso_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="1/x"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton9">
+    <Component class="javax.swing.JButton" name="opmult_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="x"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton10">
+    <Component class="javax.swing.JButton" name="num4_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="4"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton11">
+    <Component class="javax.swing.JButton" name="num3_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="3"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton12">
+    <Component class="javax.swing.JButton" name="num2_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="2"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton14">
+    <Component class="javax.swing.JButton" name="opsub_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="-"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton15">
+    <Component class="javax.swing.JButton" name="num1_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton16">
+    <Component class="javax.swing.JButton" name="virg_B">
       <Properties>
         <Property name="text" type="java.lang.String" value=","/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton17">
+    <Component class="javax.swing.JButton" name="num0_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton18">
+    <Component class="javax.swing.JButton" name="calcula_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="="/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton19">
+    <Component class="javax.swing.JButton" name="opsoma_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="+"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton20">
+    <Component class="javax.swing.JButton" name="c_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="visor">
     </Component>
   </SubComponents>
 </Form>
