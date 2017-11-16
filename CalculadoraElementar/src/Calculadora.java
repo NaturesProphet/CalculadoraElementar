@@ -53,6 +53,7 @@ public class Calculadora extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         num7_B.setText("7");
+        num7_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         num7_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 num7_BActionPerformed(evt);
@@ -60,6 +61,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         num9_B.setText("9");
+        num9_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         num9_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 num9_BActionPerformed(evt);
@@ -67,6 +69,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         num8_B.setText("8");
+        num8_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         num8_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 num8_BActionPerformed(evt);
@@ -74,6 +77,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         opcent_B.setText("%");
+        opcent_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         opcent_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 opcent_BActionPerformed(evt);
@@ -81,6 +85,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         opdiv_B.setText("/");
+        opdiv_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         opdiv_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 opdiv_BActionPerformed(evt);
@@ -88,6 +93,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         num6_B.setText("6");
+        num6_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         num6_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 num6_BActionPerformed(evt);
@@ -95,6 +101,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         num5_B.setText("5");
+        num5_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         num5_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 num5_BActionPerformed(evt);
@@ -102,6 +109,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         opinverso_B.setText("1/x");
+        opinverso_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         opinverso_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 opinverso_BActionPerformed(evt);
@@ -109,6 +117,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         opmult_B.setText("x");
+        opmult_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         opmult_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 opmult_BActionPerformed(evt);
@@ -116,6 +125,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         num4_B.setText("4");
+        num4_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         num4_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 num4_BActionPerformed(evt);
@@ -123,6 +133,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         num3_B.setText("3");
+        num3_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         num3_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 num3_BActionPerformed(evt);
@@ -130,6 +141,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         num2_B.setText("2");
+        num2_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         num2_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 num2_BActionPerformed(evt);
@@ -137,6 +149,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         opsub_B.setText("-");
+        opsub_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         opsub_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 opsub_BActionPerformed(evt);
@@ -144,6 +157,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         num1_B.setText("1");
+        num1_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         num1_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 num1_BActionPerformed(evt);
@@ -151,6 +165,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         virg_B.setText(",");
+        virg_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         virg_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 virg_BActionPerformed(evt);
@@ -158,6 +173,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         num0_B.setText("0");
+        num0_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         num0_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 num0_BActionPerformed(evt);
@@ -165,6 +181,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         calcula_B.setText("=");
+        calcula_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         calcula_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 calcula_BActionPerformed(evt);
@@ -172,6 +189,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         opsoma_B.setText("+");
+        opsoma_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         opsoma_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 opsoma_BActionPerformed(evt);
@@ -179,6 +197,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         c_B.setText("C");
+        c_B.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         c_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 c_BActionPerformed(evt);
@@ -249,7 +268,7 @@ public class Calculadora extends javax.swing.JFrame {
                                 .addComponent(calcula_B, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(visor, javax.swing.GroupLayout.PREFERRED_SIZE, 425, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jScrollPane1))
-                .addContainerGap())
+                .addGap(30, 30, 30))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

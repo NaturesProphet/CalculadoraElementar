@@ -80,7 +80,7 @@
                   </Group>
                   <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -135,6 +135,9 @@
     <Component class="javax.swing.JButton" name="num7_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="7"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="num7_BActionPerformed"/>
@@ -143,6 +146,9 @@
     <Component class="javax.swing.JButton" name="num9_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="9"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="num9_BActionPerformed"/>
@@ -151,6 +157,9 @@
     <Component class="javax.swing.JButton" name="num8_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="8"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="num8_BActionPerformed"/>
@@ -159,6 +168,9 @@
     <Component class="javax.swing.JButton" name="opcent_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="%"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcent_BActionPerformed"/>
@@ -167,6 +179,9 @@
     <Component class="javax.swing.JButton" name="opdiv_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="/"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opdiv_BActionPerformed"/>
@@ -175,6 +190,9 @@
     <Component class="javax.swing.JButton" name="num6_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="6"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="num6_BActionPerformed"/>
@@ -183,6 +201,9 @@
     <Component class="javax.swing.JButton" name="num5_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="5"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="num5_BActionPerformed"/>
@@ -191,6 +212,9 @@
     <Component class="javax.swing.JButton" name="opinverso_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="1/x"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opinverso_BActionPerformed"/>
@@ -199,6 +223,9 @@
     <Component class="javax.swing.JButton" name="opmult_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="x"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opmult_BActionPerformed"/>
@@ -207,6 +234,9 @@
     <Component class="javax.swing.JButton" name="num4_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="4"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="num4_BActionPerformed"/>
@@ -215,6 +245,9 @@
     <Component class="javax.swing.JButton" name="num3_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="3"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="num3_BActionPerformed"/>
@@ -223,6 +256,9 @@
     <Component class="javax.swing.JButton" name="num2_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="2"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="num2_BActionPerformed"/>
@@ -231,6 +267,9 @@
     <Component class="javax.swing.JButton" name="opsub_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="-"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opsub_BActionPerformed"/>
@@ -239,6 +278,9 @@
     <Component class="javax.swing.JButton" name="num1_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="1"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="num1_BActionPerformed"/>
@@ -247,6 +289,9 @@
     <Component class="javax.swing.JButton" name="virg_B">
       <Properties>
         <Property name="text" type="java.lang.String" value=","/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="virg_BActionPerformed"/>
@@ -255,6 +300,9 @@
     <Component class="javax.swing.JButton" name="num0_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="0"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="num0_BActionPerformed"/>
@@ -263,6 +311,9 @@
     <Component class="javax.swing.JButton" name="calcula_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="="/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="calcula_BActionPerformed"/>
@@ -271,6 +322,9 @@
     <Component class="javax.swing.JButton" name="opsoma_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="+"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opsoma_BActionPerformed"/>
@@ -279,6 +333,9 @@
     <Component class="javax.swing.JButton" name="c_B">
       <Properties>
         <Property name="text" type="java.lang.String" value="C"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="c_BActionPerformed"/>
