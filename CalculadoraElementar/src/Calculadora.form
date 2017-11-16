@@ -160,6 +160,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="%"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcent_BActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="opdiv_B">
       <Properties>
@@ -189,6 +192,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="1/x"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opinverso_BActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="opmult_B">
       <Properties>

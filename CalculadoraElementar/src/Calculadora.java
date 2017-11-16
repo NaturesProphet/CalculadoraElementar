@@ -1,8 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -13,8 +10,8 @@ public class Calculadora extends javax.swing.JFrame {
     /**
      * Creates new form Calculadora
      */
-    Double result = 0.0;
-    String operacao = "";
+    Double subtotal = 0.0;
+    char operacao = '0';
     String log = "";
 
     public Calculadora() {
@@ -77,6 +74,11 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         opcent_B.setText("%");
+        opcent_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opcent_BActionPerformed(evt);
+            }
+        });
 
         opdiv_B.setText("/");
         opdiv_B.addActionListener(new java.awt.event.ActionListener() {
@@ -100,6 +102,11 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         opinverso_B.setText("1/x");
+        opinverso_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opinverso_BActionPerformed(evt);
+            }
+        });
 
         opmult_B.setText("x");
         opmult_B.addActionListener(new java.awt.event.ActionListener() {
@@ -285,202 +292,248 @@ public class Calculadora extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void num0_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num0_BActionPerformed
+        visor.setText(visor.getText() + "0");
+        calcula_B.grabFocus();
+    }//GEN-LAST:event_num0_BActionPerformed
+
     private void num1_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num1_BActionPerformed
         visor.setText(visor.getText() + "1");
+        calcula_B.grabFocus();
     }//GEN-LAST:event_num1_BActionPerformed
 
     private void num2_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num2_BActionPerformed
         visor.setText(visor.getText() + "2");
+        calcula_B.grabFocus();
     }//GEN-LAST:event_num2_BActionPerformed
 
     private void num3_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num3_BActionPerformed
         visor.setText(visor.getText() + "3");
+        calcula_B.grabFocus();
     }//GEN-LAST:event_num3_BActionPerformed
 
     private void num4_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num4_BActionPerformed
         visor.setText(visor.getText() + "4");
+        calcula_B.grabFocus();
     }//GEN-LAST:event_num4_BActionPerformed
 
     private void num5_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num5_BActionPerformed
         visor.setText(visor.getText() + "5");
+        calcula_B.grabFocus();
     }//GEN-LAST:event_num5_BActionPerformed
 
     private void num6_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num6_BActionPerformed
         visor.setText(visor.getText() + "6");
+        calcula_B.grabFocus();
     }//GEN-LAST:event_num6_BActionPerformed
 
     private void num7_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num7_BActionPerformed
         visor.setText(visor.getText() + "7");
+        calcula_B.grabFocus();
     }//GEN-LAST:event_num7_BActionPerformed
 
     private void num8_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num8_BActionPerformed
         visor.setText(visor.getText() + "8");
+        calcula_B.grabFocus();
     }//GEN-LAST:event_num8_BActionPerformed
 
     private void num9_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num9_BActionPerformed
         visor.setText(visor.getText() + "9");
+        calcula_B.grabFocus();
     }//GEN-LAST:event_num9_BActionPerformed
 
     private void virg_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_virg_BActionPerformed
         visor.setText(visor.getText() + ".");
+        calcula_B.grabFocus();
     }//GEN-LAST:event_virg_BActionPerformed
 
-    private void num0_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num0_BActionPerformed
-        visor.setText(visor.getText() + "0");
-    }//GEN-LAST:event_num0_BActionPerformed
 
     private void c_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_BActionPerformed
         visor.setText(null);
-        result = 0.0;
-        operacao = "";
+        subtotal = 0.0;
+        operacao = '0';
+        calcula_B.grabFocus();
 
     }//GEN-LAST:event_c_BActionPerformed
 
-    private void opsoma_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opsoma_BActionPerformed
-        double valor = Double.parseDouble(visor.getText());
+    /*
+  esta sub-rotina processa os valores inseridos de maneira iterativa,
+  verificando a operação imediatamente anterior à atual e efetuando
+  o calculo relativo a esta operação (quando houver).
+  a procedure recebe 2 parâmetros para trabalhar:
+  1 char contendo o método (divisao, adição multiplicação etc..)
+  1 double contendo o valor atual no visor da calculadora (ultimo numero inserido)
+     */
+    public void calcula(char metodo, Double numero) {
+        //verifica a operação anterior
         switch (operacao) {
-            case "+":
-                result += valor;
-                log += log + valor + " ";
+            case '+':
+                System.out.println("Debugando: caiu aqui no +");
+                subtotal += numero;
+                log += log + numero;
                 break;
-            case "-":
-                result -= valor;
-                log += log + valor + " ";
+
+            case '-':
+                System.out.println("Debugando: caiu aqui no -");
+                subtotal -= numero;
+                log += log + numero;
                 break;
-            case "x":
-                result *= valor;
-                log += log + valor + " ";
+
+            case 'x':
+                System.out.println("Debugando: caiu aqui no x");
+                subtotal *= numero;
+                log += log + " " + numero;
                 break;
-            case "/":
-                result /= valor;
-                log += log + valor + " ";
+
+            case '/':
+                System.out.println("Debugando: caiu aqui no /");
+                if (numero != 0) {
+                    subtotal /= numero;
+                    log += log + numero;
+                } else {
+                    log = "ERRO: Divisão por 0\n";
+                    visor.setText(null);
+                    log_TA.setText(log);
+                    JOptionPane.showMessageDialog(null, "Não consigo dividir por 0"
+                            + "\nO único que ja fez isto foi Chuck Norris");
+                    subtotal = 0.0;
+                }
                 break;
-            default:
-                result = valor;
-                log = log + "" + valor + " ";
+            /*
+                observe que processamentos de porcentagem e inversões são processados 
+                "in-loco" no local em que forem invocados e não estão nesta subrotina
+             */
+            case '0':
+                System.out.println("Debugando: caiu aqui no default calc");
+                subtotal = numero;
+                log += "" + numero + " ";
                 break;
         }
-        operacao = "+";
-        log += "+ ";
-        visor.setText(null);
+
+        //if para prevenir erro de metodo incorreto (correção da falha)
+        if (!log.equals("ERRO: Divisão por 0\n")) {
+            //se uma divisão por zero não ocorreu, este é o procedimento normal
+            operacao = metodo;
+            log += metodo + " "; //trecho de log da operação
+        } else {
+            //mas se uma divisão por zero aconteceu, preciso ajustar a operacao para não
+            //efetuar uma instrução indevida e o log para nao exibir esta operação
+            operacao = '0';
+            log += " ";
+
+        }
+        calcula_B.grabFocus();
+
+    }
+
+
+    private void opsoma_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opsoma_BActionPerformed
+        if (visor.getText() != null) {
+            calcula('+', Double.parseDouble(visor.getText()));
+            visor.setText(null);
+        }
+        calcula_B.grabFocus();
     }//GEN-LAST:event_opsoma_BActionPerformed
 
+
     private void opsub_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opsub_BActionPerformed
-        double valor = Double.parseDouble(visor.getText());
-        switch (operacao) {
-            case "+":
-                result += valor;
-                log += log + valor + " ";
-                break;
-            case "-":
-                result -= valor;
-                log += log + valor + " ";
-                break;
-            case "x":
-                result *= valor;
-                log += log + valor + " ";
-                break;
-            case "/":
-                result /= valor;
-                log += log + valor + " ";
-                break;
-            default:
-                result = valor;
-                log = log + "" + valor + " ";
-                break;
+        if (visor.getText() != null) {
+            calcula('-', Double.parseDouble(visor.getText()));
+            visor.setText(null);
         }
-        operacao = "-";
-        log += "- ";
-        visor.setText(null);
+        calcula_B.grabFocus();
     }//GEN-LAST:event_opsub_BActionPerformed
 
     private void opmult_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opmult_BActionPerformed
-        double valor = Double.parseDouble(visor.getText());
-        switch (operacao) {
-            case "+":
-                result += valor;
-                log += log + valor + " ";
-                break;
-            case "-":
-                result -= valor;
-                log += log + valor + " ";
-                break;
-            case "x":
-                result *= valor;
-                log += log + valor + " ";
-                break;
-            case "/":
-                result /= valor;
-                log += log + valor + " ";
-                break;
-            default:
-                result = valor;
-                log = log + "" + valor + " ";
-                break;
+
+        if (visor.getText() != null) {
+            calcula('x', Double.parseDouble(visor.getText()));
+            visor.setText(null);
         }
-        operacao = "x";
-        log += "x ";
-        visor.setText(null);
+        calcula_B.grabFocus();
     }//GEN-LAST:event_opmult_BActionPerformed
 
     private void opdiv_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opdiv_BActionPerformed
-        double valor = Double.parseDouble(visor.getText());
-        switch (operacao) {
-            case "+":
-                result += valor;
-                log += log + valor + " ";
-                break;
-            case "-":
-                result -= valor;
-                log += log + valor + " ";
-                break;
-            case "x":
-                result *= valor;
-                log += log + valor + " ";
-                break;
-            case "/":
-                result /= valor;
-                log += log + valor + " ";
-                break;
-            default:
-                result = valor;
-                log = log + valor + " ";
-                break;
+        if (visor.getText() != null) {
+            calcula('/', Double.parseDouble(visor.getText()));
+            visor.setText(null);
         }
-        operacao = "/";
-        log += "/ ";
-        visor.setText(null);
+        calcula_B.grabFocus();
     }//GEN-LAST:event_opdiv_BActionPerformed
 
     private void calcula_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcula_BActionPerformed
-        double valor = Double.parseDouble(visor.getText());
-        System.out.println("result antes: " + result);
-        switch (operacao) {
-            case "+":
-                result += valor;
-                log += valor +" = " + result + "\n";
-                break;
-            case "-":
-                result -= valor;
-                log += valor +" = " + result + "\n";
-                break;
-            case "x":
-                result *= valor;
-                log += valor +" = " + result + "\n";
-                break;
-            case "/":
-                result /= valor;
-                log += valor +" = " + result + "\n";
-                break;
-            default:
-                result = valor;
-                break;
+        Double valor; //armazena um numero temporario lido do visor
+
+        if (visor.getText() != null) {
+            valor = Double.parseDouble(visor.getText());
+
+            switch (operacao) {
+                case '+':
+                    subtotal += valor;
+                    log += valor + " = " + subtotal + "\n";
+                    break;
+
+                case '-':
+                    subtotal -= valor;
+                    log += valor + " = " + subtotal + "\n";
+                    break;
+
+                case 'x':
+                    subtotal *= valor;
+                    log += valor + " = " + subtotal + "\n";
+                    break;
+                case '/':
+                    if (valor != 0) {
+                        subtotal /= valor;
+                        log += valor + " = " + subtotal + "\n";
+                    } else {
+                        log = "ERRO: Divisão por 0\n";
+                        operacao = '0';
+                        visor.setText(null);
+                        JOptionPane.showMessageDialog(null, "Não consigo dividir por 0."
+                                + "\nO único que ja fez isto foi Chuck Norris");
+                    }
+                    break;
+
+                default:
+                    //entao x = x e nao tem nada pra fazer;
+                    subtotal = valor;
+                    log += valor + " = " + subtotal + "\n";
+                    break;
+            }
+            operacao = '0';
+            visor.setText(subtotal.toString());
+            log_TA.setText(log);
+
         }
-        operacao = "";
-        System.out.println("result depois: " + result);
-        visor.setText(result.toString());
-        log_TA.setText(log);
+        calcula_B.grabFocus();
+
     }//GEN-LAST:event_calcula_BActionPerformed
+
+    private void opinverso_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opinverso_BActionPerformed
+        if (!"0".equals(visor.getText())) {
+            Double num = Double.parseDouble(visor.getText());
+            log += "<inversao de " + num + ">" + " ";
+            num = 1 / num;
+            visor.setText(num.toString());
+        } else {
+
+            JOptionPane.showMessageDialog(null, "Não sou Chuck Norris."
+                    + "\nNão tenho poderes para inverter um zero");
+        }
+        calcula_B.grabFocus();
+    }//GEN-LAST:event_opinverso_BActionPerformed
+
+    private void opcent_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcent_BActionPerformed
+        Double num;
+        if (visor.getText() != null) {
+            num = Double.parseDouble(visor.getText());
+            log += "<" + num + "% de " + subtotal + ">" + " ";
+            num = (subtotal * (num / 100));
+            visor.setText(num.toString());
+        }
+        calcula_B.grabFocus();
+    }//GEN-LAST:event_opcent_BActionPerformed
 
     /**
      * @param args the command line arguments
