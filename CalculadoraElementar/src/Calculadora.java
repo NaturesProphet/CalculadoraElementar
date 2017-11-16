@@ -368,25 +368,21 @@ public class Calculadora extends javax.swing.JFrame {
         //verifica a operação anterior
         switch (operacao) {
             case '+':
-                System.out.println("Debugando: caiu aqui no +");
                 subtotal += numero;
                 log += log + numero;
                 break;
 
             case '-':
-                System.out.println("Debugando: caiu aqui no -");
                 subtotal -= numero;
                 log += log + numero;
                 break;
 
             case 'x':
-                System.out.println("Debugando: caiu aqui no x");
                 subtotal *= numero;
                 log += log + " " + numero;
                 break;
 
             case '/':
-                System.out.println("Debugando: caiu aqui no /");
                 if (numero != 0) {
                     subtotal /= numero;
                     log += log + numero;
@@ -404,7 +400,6 @@ public class Calculadora extends javax.swing.JFrame {
                 "in-loco" no local em que forem invocados e não estão nesta subrotina
              */
             case '0':
-                System.out.println("Debugando: caiu aqui no default calc");
                 subtotal = numero;
                 log += "" + numero + " ";
                 break;
