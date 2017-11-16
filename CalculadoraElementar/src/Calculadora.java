@@ -190,6 +190,7 @@ public class Calculadora extends javax.swing.JFrame {
         visor.setFont(new java.awt.Font("Lucida Sans", 1, 20)); // NOI18N
         visor.setForeground(new java.awt.Color(102, 102, 102));
 
+        log_TA.setEditable(false);
         log_TA.setBackground(new java.awt.Color(153, 153, 153));
         log_TA.setColumns(20);
         log_TA.setForeground(new java.awt.Color(0, 255, 51));
