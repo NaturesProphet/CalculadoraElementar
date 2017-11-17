@@ -16,6 +16,7 @@ public class Calculadora extends javax.swing.JFrame {
 
     public Calculadora() {
         initComponents();
+        calcula_B.grabFocus();
     }
 
     /**
@@ -185,6 +186,11 @@ public class Calculadora extends javax.swing.JFrame {
         calcula_B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 calcula_BActionPerformed(evt);
+            }
+        });
+        calcula_B.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                calcula_BKeyPressed(evt);
             }
         });
 
@@ -549,6 +555,78 @@ public class Calculadora extends javax.swing.JFrame {
         }
         calcula_B.grabFocus();
     }//GEN-LAST:event_opcent_BActionPerformed
+
+    private void calcula_BKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_calcula_BKeyPressed
+        //EVENTOS DE TECLA
+        switch (evt.getKeyChar()) {
+            
+            case '0': // 0
+                num0_B.doClick();
+                break;
+                
+            case '1':
+                num1_B.doClick();
+                break;
+                
+            case '2':
+                num2_B.doClick();
+                break;
+                
+            case '3':
+                num3_B.doClick();
+                break;
+                
+            case '4':
+                num4_B.doClick();
+                break;
+            
+            case '5':
+                num5_B.doClick();
+                break;
+                
+            case '6':
+                num6_B.doClick();
+                break;
+                
+            case '7':
+                num7_B.doClick();
+                break;
+                
+            case '8':
+                num8_B.doClick();
+                break;
+                
+            case '9':
+                num9_B.doClick();
+                break;
+             
+            case '+':
+                opsoma_B.doClick();
+                break;
+                
+            case '-':
+                opsub_B.doClick();
+                break;
+                
+            case '*':
+               opmult_B.doClick();     
+               break;     
+                
+            case '/':
+                opdiv_B.doClick();
+                break;
+                
+            case '%':
+                opcent_B.doClick();
+                break;
+            default:
+                if (evt.getKeyCode() == 27) {
+                    c_B.doClick();
+                }
+                break;
+        }
+
+    }//GEN-LAST:event_calcula_BKeyPressed
 
     /**
      * @param args the command line arguments
